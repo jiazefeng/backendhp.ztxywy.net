@@ -1,0 +1,47 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>四子王旗</title>
+    <link rel="stylesheet" type="text/css" href="../../../Public/css/main.css">
+    <link rel="stylesheet" type="text/css" href="../../../Public/css/dataMap.css">
+    <script type="text/javascript" src="../../../Public/js/jquery.js"></script>
+    <script type="text/javascript" src="../../../Public/js/echarts-all.js"></script>
+    <script type="text/javascript" src="../../../Public/js/digitroll.js"></script>
+    <script type="text/javascript" src="../../../Public/js/vue.js"></script>
+    <script type="text/javascript" src="../../../Public/js/sea.js" id="seajsnode"></script>
+</head>
+<body>
+<div id="app" class="clearfix">
+    <div class="spinner" id="loadings" v-show="loading">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+    </div>
+    <div class="left fl">
+        <div id="userFromMap" class="fl" style="height: 40%"></div>
+        <div id="userRegister" class="fl" style="height: 30%"></div>
+        <div id="future" class="fl" style="height: 30%"></div>
+    </div>
+    <div class="middle fl">
+        <div id="top-main" class="fl">
+            <h1>四子王旗旅游项目大数据</h1>
+            <h3>景区接待游客总数：</h3>
+            <div id="countup"></div>
+        </div>
+        <div id="ticketAmount" style="margin-top: 175px"></div>
+        <div id="ticketMoney"></div>
+    </div>
+    <div class="right fl">
+        <div id="onLinePerson" class="fl" style="height: 40%"></div>
+        <div id="age" class="fl" style="height: 30%"></div>
+        <div id="orderAmount" class="fl" style="height: 30%"></div>
+    </div>
+</div>
+<script>
+    seajs.use("../../../Pms/Apps/Public/Operation/count/index");
+</script>
+</body>
+</html>

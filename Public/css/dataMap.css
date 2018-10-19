@@ -1,0 +1,94 @@
+@charset "utf-8";
+body{
+    background: url("../images/city.jpg") no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+#app {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+/*rgba(0, 0, 0, 0.3) none repeat scroll 0 0*/
+}
+.fl {
+    float: left;
+}
+
+#app .left,
+#app .right {
+    position: relative;
+    height: 100%;
+    width: 29%;
+}
+#app .left > div,
+#app .middle > div,
+#app .right > div {
+    width: 100%;
+}
+#app .middle {
+    position: relative;
+    height: 100%;
+    width: 42%;
+}
+
+#app .middle #top-main {
+    text-align: center;
+    height: 175px;
+}
+#app .middle #ticketAmount,
+#app .middle #ticketMoney {
+    height: calc((100% - 175px) / 2);
+}
+#app .middle #top-main h1, h3 {
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#app .middle #top-main h1 {
+    font-size: 25px;
+}
+
+#app .middle #top-main h3 {
+    text-align: left;
+    color: #fafafa;
+    font-size: 20px;
+    margin-left: 10%;
+}
+
+.spinner {
+    background-color: #fafafa !important;
+}
+
+#countup {
+    height: 55px;
+    font-size: 38px;
+    overflow: hidden;
+    text-align: center;
+    margin: 10px auto;
+    width: 472px;
+    /*background-color: rgba(0, 0, 0, 0.7);*/
+}
+
+#countup .num {
+    margin: 0 5px;
+}
+
+#countup span {
+    float: left;
+    font-size: 38px;
+    line-height: 38px;
+    color: #333;
+}
+
+#countup > .num > div {
+    background-color: rgba(255, 255, 255, 0.1);
+    /*background-color: rgba(0, 0, 0, 0.1);*/
+    color: #fafafa;
+    padding: 0 10px
+}
